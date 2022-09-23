@@ -31,9 +31,43 @@ careers = function (event) {
     $(window).scrollTop(0);
     // var dd = document.getElementById("art").classList.add("active-route");
 }
+logo = function (event) {
+    document.getElementById("mainpage").style.display = "block";
+    document.getElementById("servicepage").style.display = "none";
+    document.getElementById("generalpage").style.display = "none";
+    document.getElementById("careerpage").style.display = "none";
+    var dd = document.getElementById("ser").classList.remove("active-route");
+    var ee = document.getElementById("pro").classList.remove("active-route");
+    var ff = document.getElementById("car").classList.remove("active-route");
+    $(window).scrollTop(0);
+    // var dd = document.getElementById("art").classList.add("active-route");
+}
 blog = function (event) {
     // console.log("Your code");
     return false;
+}
+// $('#popovershow').on('click', function (e) {
+
+//     // document.getElementById("popp").classList.toggle("popover_show").focus;
+//     // e.preventDefault();
+// });
+var popflag = "1";
+$('#popovershow').click(function (e) {
+    document.getElementById("popp").classList.toggle("popover_show");
+    popflag = "0";
+});
+$('html').click(function () {
+    if (popflag != "0") {
+        document.getElementById("popp").classList.remove("popover_show");
+    } else {
+        // console.log("in");ß
+        popflag = "1";
+    }
+});
+
+poss = function (event) {
+    var xr = document.getElementById("lightbig").classList.toggle("rotate");
+    var xre = document.getElementById("adapop").classList.toggle("show");
 }
 mobilemenuopen = function (event) {
     // openmennu
@@ -54,8 +88,6 @@ mobilemenuclose = function (event) {
     openmennuu.style.display = "block";
 }
 
- 
-// $("#toDoList").on('click', 'p', function() {
-//     $(this).remove();
-//   });
-// });
+// swiperbullet = function (event){
+//     // swiper-pagination-bullet-active
+// }

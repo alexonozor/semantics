@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Home - Project X</title>
-    <base href="/">
+    <!-- <base href="/"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="assets/styles.0ec286a79b36623cb558.css" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/styles.css" media="all" onload="this.media='all'">
     <link rel="stylesheet" href="assets/style.css" media="all" onload="this.media='all'">
 </head>
 
 <body>
     <div id="projectX">
-        <top-menu _ngcontent-dwp-c37="" class="ng-star-inserted">
+        <top-menu  class="ng-star-inserted">
             <nav class="bg-grey_bg font-workSans text-base fixed top-0 w-full z-10">
                 <div class="px-4 xl:px-28 lg:py-2.5">
                     <div class="flex items-center justify-between h-16">
@@ -22,20 +22,20 @@
                         <div class="flex-1 lg:flex-auto lg:hidden ng-star-inserted" onclick="return mobilemenuclose()" id="cancelx"><img src="assets/img/icons/close.png" alt="close menu icon"></div>
                         <!---->
                         <div class="lg:flex flex-1 lg:flex-auto items-center">
-                            <div class="flex-shrink-0"><a routerlink="." class="cursor-pointer block justify-center flex" href="/"><img src="/assets/img/white_semantic.png" alt="Workflow" class="h-6 w-auto sm:h-14"></a></div>
+                            <div class="flex-shrink-0"><a onclick="return logo()" class="cursor-pointer block justify-center flex" href="javascript:void(0);"><img src="./assets/img/white_semantic.png" alt="Workflow" class="h-6 w-auto sm:h-14"></a></div>
                             <div class="hidden lg:block relative ml-20">
                                 <div class="flex space-x-2 leading-4">
-                                    <div class="menu-item">For clients <div class="light-arrow"></div>
+                                    <div class="menu-item" id="popovershow">For clients <div class="light-arrow"></div>
                                     </div><a onclick="return services()" class="menu-item" id="ser" href="javascript:void(0);">Services</a><a onclick="return projects()" class="menu-item" id="pro" href="javascript:void(0);">Portfolio</a><a onclick="return careers()" class="menu-item" id="car" href="javascript:void(0);">Careers</a><a onclick="return articles()" id="art" class="menu-item" href="javascript:void(0);">Blog</a>
                                 </div>
                                 <menu-popover class="hidden lg:block">
                                     <div class="hidden lg:block">
-                                        <div class="popover pt-10 px-10 z-20">
+                                        <div class="popover pt-10 px-10 z-20" id="popp">
                                             <div class="arrow"></div>
                                             <div class="flex justify-between flex-wrap">
-                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/startups">
+                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="javascript:void(0);">
                                                         <div class="flex mb-2.5">
-                                                            <div class="flex items-center"><img src="/assets/img/icons/startups.svg">
+                                                            <div class="flex items-center"><img src="./assets/img/icons/startups.svg">
                                                                 <h3 class="ml-2.5">Startups</h3>
                                                             </div>
                                                             <!---->
@@ -45,9 +45,9 @@
                                                         <p class="text-grey_font_col text-sm">Software development from scratch to market launch</p>
                                                     </div>
                                                 </div>
-                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/enterprises">
+                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="javascript:void(0);">
                                                         <div class="flex mb-2.5">
-                                                            <div class="flex items-center"><img src="/assets/img/icons/enterprises.svg">
+                                                            <div class="flex items-center"><img src="./assets/img/icons/enterprises_active.svg">
                                                                 <h3 class="ml-2.5">Enterprises</h3>
                                                             </div>
                                                             <!---->
@@ -57,9 +57,9 @@
                                                         <p class="text-grey_font_col text-sm">Future-oriented solutions to solve today's problems and anticipate tomorrow’s needs</p>
                                                     </div>
                                                 </div>
-                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/smbs">
+                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="javascript:void(0);">
                                                         <div class="flex mb-2.5">
-                                                            <div class="flex items-center"><img src="/assets/img/icons/smbs.svg">
+                                                            <div class="flex items-center"><img src="./assets/img/icons/smbs.svg">
                                                                 <h3 class="ml-2.5">SMBs</h3>
                                                             </div>
                                                             <!---->
@@ -69,9 +69,9 @@
                                                         <p class="text-grey_font_col text-sm">Budget-wise solutions for small to medium-sized businesses</p>
                                                     </div>
                                                 </div>
-                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/non-profit">
+                                                <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="javascript:void(0);">
                                                         <div class="flex mb-2.5">
-                                                            <div class="flex items-center"><img src="/assets/img/icons/non-profits.svg">
+                                                            <div class="flex items-center"><img src="./assets/img/icons/non-profits.svg">
                                                                 <h3 class="ml-2.5">Non-profits</h3>
                                                             </div>
                                                             <!---->
@@ -89,7 +89,7 @@
                                     <div class="adaptive-popover">
                                         <div class="ng-star-inserted"><a href="/clients/startups">
                                                 <div class="flex mb-7">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/startups.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/startups.svg">
                                                         <h3 class="ml-2.5 text-xl">Startups</h3>
                                                     </div>
                                                     <!---->
@@ -97,7 +97,7 @@
                                             </a></div>
                                         <div class="ng-star-inserted"><a href="/clients/enterprises">
                                                 <div class="flex mb-7">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/enterprises.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/enterprises_active.svg">
                                                         <h3 class="ml-2.5 text-xl">Enterprises</h3>
                                                     </div>
                                                     <!---->
@@ -105,7 +105,7 @@
                                             </a></div>
                                         <div class="ng-star-inserted"><a href="/clients/smbs">
                                                 <div class="flex mb-7">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/smbs.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/smbs.svg">
                                                         <h3 class="ml-2.5 text-xl">SMBs</h3>
                                                     </div>
                                                     <!---->
@@ -113,7 +113,7 @@
                                             </a></div>
                                         <div class="ng-star-inserted"><a href="/clients/non-profit">
                                                 <div class="flex">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/non-profits.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/non-profits.svg">
                                                         <h3 class="ml-2.5 text-xl">Non-profits</h3>
                                                     </div>
                                                     <!---->
@@ -131,7 +131,7 @@
                 </div>
                 <div id="mobile-menu" class="adaptive-menu">
                     <div class="px-2 pt-2 pb-3 space-y-1">
-                        <div class="menu-item">For clients <div class="light-arrow big"></div>
+                        <div class="menu-item" onclick="return poss()">For clients <div class="light-arrow big" id="lightbig"></div>
                         </div>
                         <menu-popover class="block lg:hidden !m-0">
                             <div class="hidden lg:block">
@@ -140,7 +140,7 @@
                                     <div class="flex justify-between flex-wrap">
                                         <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/startups">
                                                 <div class="flex mb-2.5">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/startups.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/startups.svg">
                                                         <h3 class="ml-2.5">Startups</h3>
                                                     </div>
                                                     <!---->
@@ -152,7 +152,7 @@
                                         </div>
                                         <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/enterprises">
                                                 <div class="flex mb-2.5">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/enterprises.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/enterprises_active.svg">
                                                         <h3 class="ml-2.5">Enterprises</h3>
                                                     </div>
                                                     <!---->
@@ -164,7 +164,7 @@
                                         </div>
                                         <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/smbs">
                                                 <div class="flex mb-2.5">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/smbs.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/smbs.svg">
                                                         <h3 class="ml-2.5">SMBs</h3>
                                                     </div>
                                                     <!---->
@@ -176,7 +176,7 @@
                                         </div>
                                         <div changesrconhover="" class="w-45% cursor-pointer text-light_font_col mb-12 ng-star-inserted"><a href="/clients/non-profit">
                                                 <div class="flex mb-2.5">
-                                                    <div class="flex items-center"><img src="/assets/img/icons/non-profits.svg">
+                                                    <div class="flex items-center"><img src="./assets/img/icons/non-profits.svg">
                                                         <h3 class="ml-2.5">Non-profits</h3>
                                                     </div>
                                                     <!---->
@@ -191,34 +191,34 @@
                                 </div>
                                 <div class="backdrop"></div>
                             </div>
-                            <div class="adaptive-popover">
-                                <div class="ng-star-inserted"><a href="/clients/startups">
+                            <div class="adaptive-popover" id="adapop">
+                                <div class="ng-star-inserted"><a href="javascript:void(0);">
                                         <div class="flex mb-7">
-                                            <div class="flex items-center"><img src="/assets/img/icons/startups.svg">
+                                            <div class="flex items-center"><img src="./assets/img/icons/startups.svg">
                                                 <h3 class="ml-2.5 text-xl">Startups</h3>
                                             </div>
                                             <!---->
                                         </div>
                                     </a></div>
-                                <div class="ng-star-inserted"><a href="/clients/enterprises">
+                                <div class="ng-star-inserted"><a href="javascript:void(0);">
                                         <div class="flex mb-7">
-                                            <div class="flex items-center"><img src="/assets/img/icons/enterprises.svg">
+                                            <div class="flex items-center"><img src="./assets/img/icons/enterprises_active.svg">
                                                 <h3 class="ml-2.5 text-xl">Enterprises</h3>
                                             </div>
                                             <!---->
                                         </div>
                                     </a></div>
-                                <div class="ng-star-inserted"><a href="/clients/smbs">
+                                <div class="ng-star-inserted"><a href="javascript:void(0);">
                                         <div class="flex mb-7">
-                                            <div class="flex items-center"><img src="/assets/img/icons/smbs.svg">
+                                            <div class="flex items-center"><img src="./assets/img/icons/smbs.svg">
                                                 <h3 class="ml-2.5 text-xl">SMBs</h3>
                                             </div>
                                             <!---->
                                         </div>
                                     </a></div>
-                                <div class="ng-star-inserted"><a href="/clients/non-profit">
+                                <div class="ng-star-inserted"><a href="javascript:void(0);">
                                         <div class="flex">
-                                            <div class="flex items-center"><img src="/assets/img/icons/non-profits.svg">
+                                            <div class="flex items-center"><img src="./assets/img/icons/non-profits.svg">
                                                 <h3 class="ml-2.5 text-xl">Non-profits</h3>
                                             </div>
                                             <!---->
@@ -237,7 +237,7 @@
             <main-page class="ng-star-inserted" id="mainpage">
                 <section class="landing-section flex flex-col items-center pt-12 first-section pb-0">
                     <div class="container md:flex flex-column space-between">
-                        <div class="lg:flex flex-col items-start self-center"><img src="assets/img/bg-img/main_page/main_page_mobile_bg.png" alt="Dmitriy Shekhovtsov photo" class="block lg:hidden h-full w-full max-h-700 object-contain my-10" style="width: 100%; height: 100%;">
+                        <div class="lg:flex flex-col items-start self-center"><img src="assets/img/feedback/main_page_bg.png" alt="Dmitriy Shekhovtsov photo" class="block lg:hidden h-full w-full max-h-700 object-contain my-10" style="width: 100%; height: 100%;">
                             <h1 class="font-bold text-light_title_col text-4xl leading-44 md:leading-66 md:text-64 mb-8 md:w-11/12">Led by a Google Developer Expert</h1>
                             <p class="leading-6 text-grey_font_col lg:mb-8 mb-14">Valor Software is more than just a software development company. We’re a team of people driven by innovation who pull off the impossible with the blend of the brightest technological minds and edge technologies. </p><button routerlink="/" fragment="technologies" class="btn-pink flex md:justify-between justify-center py-5 px-10 w-full lg:w-auto" tabindex="0">Review our tech stack <img src="assets/img/icons/arrow.svg" alt="" class="ml-2 rotate-90"></button>
                         </div><img src="assets/img/feedback/main_page_bg.png" alt="Dmitriy Shekhovtsov photo" class="hidden lg:block h-full w-full max-h-700 object-contain lg:object-cover" style="width: 100%; height: 100%;">
@@ -404,7 +404,7 @@
                                     <div class="md:flex flex-column justify-between align-center h-full items-center">
                                         <div class="md:w-8/12"><img alt="slide img" class="block md:hidden w-2/4 h-2/4 m-auto mb-6" src="assets/img/small_to_medium.png">
                                             <h3 class="md:text-32 text-2xl text-light_title_col leading-28 md:leading-44 mb-8">Small to medium</h3>
-                                            <p class="text-grey_font_col tracking-tightest"> We make progress transparent and predictable, so you can forecast the result after every development stage and plan your budget for the next business turn. </p><button class="flex justify-center md:justify-between mt-10 w-full md:w-auto"><a class="btn-pink flex justify-center w-full" href="/clients/smbs">View details<img src="assets/img/icons/arrow.svg" alt="" class="ml-2"></a></button>
+                                            <p class="text-grey_font_col tracking-tightest"> We make progress transparent and predictable, so you can forecast the result after every development stage and plan your budget for the next business turn. </p><button class="flex justify-center md:justify-between mt-10 w-full md:w-auto"><a class="btn-pink flex justify-center w-full" href="javascript:void(0);">View details<img src="assets/img/icons/arrow.svg" alt="" class="ml-2"></a></button>
                                         </div>
                                         <div class="hidden md:block md:max-w-full mb-6 md:mb-0"><img alt="slide img" class="w-full" src="assets/img/small_to_medium.png"></div>
                                     </div>
@@ -413,7 +413,7 @@
                                     <div class="md:flex flex-column justify-between align-center h-full items-center">
                                         <div class="md:w-8/12"><img alt="slide img" class="block md:hidden w-2/4 h-2/4 m-auto mb-6" src="assets/img/non_profits.png">
                                             <h3 class="md:text-32 text-2xl text-light_title_col leading-28 md:leading-44 mb-8">Non-profits</h3>
-                                            <p class="text-grey_font_col tracking-tightest"> When strict timing and budget are as critical as the product quality, we’ll deliver the required scope within the given timeframe and make sure to address changes instantly. </p><button class="flex justify-center md:justify-between mt-10 w-full md:w-auto"><a class="btn-pink flex justify-center w-full" href="/clients/non-profit">Explore now<img src="assets/img/icons/arrow.svg" alt="" class="ml-2"></a></button>
+                                            <p class="text-grey_font_col tracking-tightest"> When strict timing and budget are as critical as the product quality, we’ll deliver the required scope within the given timeframe and make sure to address changes instantly. </p><button class="flex justify-center md:justify-between mt-10 w-full md:w-auto"><a class="btn-pink flex justify-center w-full" href="javascript:void(0);">Explore now<img src="assets/img/icons/arrow.svg" alt="" class="ml-2"></a></button>
                                         </div>
                                         <div class="hidden md:block md:max-w-full mb-6 md:mb-0"><img alt="slide img" class="w-full" src="assets/img/non_profits.png"></div>
                                     </div>
@@ -492,11 +492,11 @@
                                         <!---->
                                     </ul>
                                 </div><button class="flex justify-center w-full md:w-214"><a rel="noopener" target="_blank" class="btn-pink flex justify-center items-center md:w-214 w-full" href="https://nativescript.org/partners/">
-                                        <p class="tracking-tightest"> Visit NativeScript</p><img src="assets/img/icons/arrow.svg" alt="" class="ml-2">
+                                        <p class="tracking-tightest"> Visit NativeScript</p><img src="./assets/img/icons/arrow.svg" alt="" class="ml-2">
                                     </a></button>
                             </div>
                             <div class="w-full flex flex-col justify-center text-center items-center text-light_title_col hidden md:block">
-                                <!----><img style="width: 100%;" src="assets/imgnativescript_new.svg" alt="NativeScripticon">
+                                <!----><img style="width: 100%;" src="./assets/imgnativescript_new.svg" alt="NativeScripticon">
                             </div>
                         </div>
                         <div class="md:flex flex-column justify-between w-full h-full gap-14 mt-32 flex-row-reverse ng-star-inserted">
@@ -513,11 +513,11 @@
                                         <!---->
                                     </ul>
                                 </div><button class="flex justify-center w-full md:w-214"><a rel="noopener" target="_blank" class="btn-pink flex justify-center items-center md:w-214 w-full" href="https://valor-software.com/articles/announcing-strategic-partnership-with-zack-jackson-the-module-federation-inventor">
-                                        <p class="tracking-tightest"> See what we're doing</p><img src="assets/img/icons/arrow.svg" alt="" class="ml-2">
+                                        <p class="tracking-tightest"> See what we're doing</p><img src="./assets/img/icons/arrow.svg" alt="" class="ml-2">
                                     </a></button>
                             </div>
                             <div class="w-full flex flex-col justify-center text-center items-center text-light_title_col hidden md:block">
-                                <!----><img style="width: 100%;" src="assets/img/module_federation.svg" alt="Module Federationicon">
+                                <!----><img style="width: 100%;" src="./assets/img/module_federation.svg" alt="Module Federationicon">
                             </div>
                         </div>
                         <!---->
@@ -537,7 +537,7 @@
                                         <!---->
                                         <!---->
                                         <div data-swiper-slide-index="0" class="rounded-32 p-16 swiper-slide ng-star-inserted swiper-slide-active" style="width: 993.6666666666667px; margin-right: 88px;">
-                                            <!----><img src="assets/img/icons/quotation_marks.svg" alt="" class="absolute ng-star-inserted" style="height: 95px; width: 116px; top: -60px; left: -60px;">
+                                            <!----><img src="./assets/img/icons/quotation_marks.svg" alt="" class="absolute ng-star-inserted" style="height: 95px; width: 116px; top: -60px; left: -60px;">
                                             <div class="flex-column ng-star-inserted">
                                                 <div class="w-full bg-grey overflow-hidden h-350 h-310">
                                                     <div class="flex justify-between">
@@ -561,7 +561,7 @@
                                             <!---->
                                         </div>
                                         <div data-swiper-slide-index="1" class="rounded-32 p-16 swiper-slide ng-star-inserted swiper-slide-next" style="width: 993.6666666666667px; margin-right: 88px;">
-                                            <!----><img src="assets/img/icons/quotation_marks.svg" alt="" class="absolute ng-star-inserted" style="height: 95px; width: 116px; top: -60px; left: -60px;">
+                                            <!----><img src="./assets/img/icons/quotation_marks.svg" alt="" class="absolute ng-star-inserted" style="height: 95px; width: 116px; top: -60px; left: -60px;">
                                             <div class="flex-column ng-star-inserted">
                                                 <div class="w-full bg-grey overflow-hidden h-350">
                                                     <div class="flex justify-between">
@@ -1375,7 +1375,7 @@
             <footer>
                 <div class="px-4 xl:px-28 pb-6">
                     <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between border-t-2 border-placeholder_col pt-6">
-                        <div class="flex-shrink-0"><a routerlink="." class="cursor-pointer" href="/"><img src="/assets/img/white_semantic.png" alt="Workflow" class="h-14 w-70 md:w-full"></a></div>
+                        <div class="flex-shrink-0"><a onclick="return logo()" class="cursor-pointer" href="javascript:void(0);"><img src="./assets/img/white_semantic.png" style="width: 9em!important;" alt="Workflow" class="h-14 w-70 md:w-full"></a></div>
                         <div class="hidden lg:flex items-center">
                             <div class="leading-4 flex">
                                 <div class="lg:w-75 !mr-10"><a href="https://www.linkedin.com/company/valor-software/about/" target="_blank" rel="noopener" class="block transition-all text-header_font_col hover:font-bold">LinkedIn</a></div>
@@ -1401,7 +1401,7 @@
         </app-footer>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/jquery.min.js"></script>
     <script src="assets/javascript.js" defer=""></script>
 </body>
 
